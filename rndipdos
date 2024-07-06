@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+import os
+
+if os.path.exists('./rndipdos.ini'):
+	print("  _   _   _  __          __     _____  _   _ _____ _   _  _____   _   _   _ \n | | | | | | \ \        / /\   |  __ \| \ | |_   _| \ | |/ ____| | | | | | |\n | | | | | |  \ \  /\  / /  \  | |__) |  \| | | | |  \| | |  __  | | | | | |\n | | | | | |   \ \/  \/ / /\ \ |  _  /| . ` | | | | . ` | | |_ | | | | | | |\n |_| |_| |_|    \  /\  / ____ \| | \ \| |\  |_| |_| |\  | |__| | |_| |_| |_|\n (_) (_) (_)     \/  \/_/    \_\_|  \_\_| \_|_____|_| \_|\_____| (_) (_) (_)")
+	print("\nThis software was made for educational, legal and ethical use, the author of this software is not liable for any unethical or illegal use of this software!\nBy using this software, you agree to the legal and ethical use of this software!\nDo you agree? y/n")
+	input = input()
+	
+	if (input=="y"):
+		print("\n\n\n\n\n\n\n\n\n\n\n\nTo view all commands use 'help'")
+		os.system('python3 ./menu.py')
+	elif (input=="n"):
+		exit()
+	else:
+		os.system('sudo rndipdos')
+else:
+	print("[FATAL ERROR]\nNo configuration file found, exiting...")
+	exit()
